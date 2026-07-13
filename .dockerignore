@@ -1,0 +1,24 @@
+# Exclude all development, test, and documentation artifacts
+**/tests/
+**/__pycache__/
+**/*.pyc
+**/.git/
+**/.gitignore
+*.md
+
+# Exclude all Python files except those explicitly listed
+*.py
+!Dockerfile
+!amd_track1/__init__.py
+!amd_track1/entrypoint.py
+!amd_track1/executor.py
+!amd_track1/input_validation.py
+!amd_track1/model_registry.py
+!amd_track1/classifier.py
+!amd_track1/capability_profiles.py
+!amd_track1/tool_execution.py
+!amd_track1/arithmetic_detection.py
+!amd_track1/requirements.txt
+!amd_track1/tools/__init__.py
+!amd_track1/tools/arithmetic_evaluator.py
+!amd_track1/tools/submission_validator.py

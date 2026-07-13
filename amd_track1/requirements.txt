@@ -1,0 +1,18 @@
+# AMD Track 1 Agent Requirements
+# Minimal dependencies for runtime
+
+# Standard library dependencies (included in Python standard library)
+# - json
+# - os
+# - sys
+# - time
+# - re
+# - ast
+# - threading
+# - concurrent.futures
+
+# Third-party dependencies
+requests>=2.28.0
+jsonschema>=4.0,<5
+sympy==1.14.0
+z3-solver==4.15.4.0
