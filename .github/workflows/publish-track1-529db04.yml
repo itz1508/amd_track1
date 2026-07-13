@@ -12,7 +12,7 @@ permissions:
 
 env:
   SOURCE_SHA: 529db04a7c0ba81b9d7d222759d036c18382db7d
-  IMAGE: ghcr.io/itz1508/amd-track1:529db04
+  IMAGE: ghcr.io/itz1508/audisor-amd-track1:529db04
 
 jobs:
   publish:
@@ -59,4 +59,4 @@ jobs:
         shell: bash
         run: |
           echo "registry_digest=${{ steps.build.outputs.digest }}" >> "$GITHUB_STEP_SUMMARY"
-          echo "submission_reference=ghcr.io/itz1508/amd-track1@${{ steps.build.outputs.digest }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "submission_reference=ghcr.io/itz1508/audisor-amd-track1@${{ steps.build.outputs.digest }}" >> "$GITHUB_STEP_SUMMARY"
